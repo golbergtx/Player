@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Player</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div class="video-player-wrapper">
+	<div class="video-player">
+		<video id="video">
+			<source src="media/The%20Beatles%20-%20Help.MP4" >
+		</video>
+		<div class="video-player__controls">
+			<div class="vp__progress-bar">
+				<div class="vp__progress-status" id="progress-status"></div>
+			</div>
+			<div class="vp__footer-controls">
+			 	<div class="vp__button-controls">
+					 <button type="button" class="vp__button-play-pause vp__button--play" id="button-play-pause"></button>
+			 	</div>
+				<div class="vp__info-bar">
+					<p class="vp__info">Video title or description</p>
+					<p class="vp__time-info">
+						<span class="time-status">02:34:16</span> // <span class="time-length">04:23:15</span>
+					</p>
+				</div>
+				<div class="vp__volume-bar">
+					<button type="button" class="vp__volume-button"></button>
+					<div class="vp__volume-progress">
+						<div class="vp__volume-progress-status"></div>
+					</div>
+				</div>
+				<div class="vp__quality-control">
+					<div class="vp__quality-control-select"><span class="vp__quality-control-select-text">HD</span></div>
+					<div class="vp__m-quality-control">
+						<ul class="vp__m-quality-control-var">
+							<li class="vp__m-quality-control-var-item vp__m-quality-control-var-item-hd">720p</li>
+							<li class="vp__m-quality-control-var-item">480p</li>
+							<li class="vp__m-quality-control-var-item">360p</li>
+						</ul>
+					</div>
+				</div>
+				<div class="vp__fullscreen-toggle">
+					<button class="vp__fullscrean"></button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>
